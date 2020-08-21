@@ -37,7 +37,7 @@ securityContext:
 
 service:
   type: NodePort
-  port: 8080
+  port: 80
 
 ingress:
   enabled: true
@@ -55,7 +55,7 @@ ingress:
   tls:
     - secretName: mohammedragab.com
       hosts:
-        - myapp.mohammedragab.com
+        - myapp
 
 resources:
   # We usually recommend not to specify default resources and to leave this as a conscious
